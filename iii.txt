@@ -1,0 +1,27 @@
+Oui, il est possible de paralléliser cette fonction, notamment pour traiter des chaînes très longues
+qui ne rentrent pas en mémoire. La parallélisation peut être réalisée en répartissant la tâche de 
+traitement de sous-chaînes sur plusieurs machines. Voici une approche possible:
+
+Parallélisation de la Fonction: 
+
+1. Diviser la Chaîne: La chaîne est divisée en sous-chaînes gérables par chaque machine.
+2. Traitement Parallèle : Chaque machine traite indépendamment sa sous-chaîne.
+3.Collecte des Résultats : Les résultats partiels sont collectés et combinés pour obtenir
+le résultat final.
+
+
+En termes de performances et de complexité (en temps et en mémoire), la parallélisation offre 
+généralement un potentiel d'amélioration des performances en temps. Cependant, cela s'accompagne
+de coûts supplémentaires, notamment la coordination entre les machines et la gestion de la 
+parallélisation de la fonction. 
+
+Du côté de la complexité en mémoire, la parallélisation peut permettre de limiter la consommation
+totale de mémoire en distribuant le traitement sur plusieurs machines, chacune utilisant uniquement
+la mémoire nécessaire pour sa tâche spécifique.
+
+Comparativement à la fonction synchrone, la version parallèle peut être plus rapide car traitement
+simultané sur plusieurs machines. Cependant, il faut prendre en compte les coûts associés à la 
+coordination des tâches et à la collecte des résultats des machines.
+
+En résumé, la parallélisation offre un compromis entre performances améliorées en temps et coûts 
+supplémentaires associés à la coordination et à la gestion de la parallélisation.
